@@ -1,0 +1,48 @@
+body {
+  background-color: #454545;
+}
+.nav {
+  height: 5vh;
+  overflow: hidden;
+}
+.nav a {
+  height: 100%;
+  color: #000;
+  display: inline-block;
+  min-width: 75px;
+  padding: 4px 6px;
+  text-decoration: none;
+}
+.nav a:hover {
+  color: #fff;
+}
+.nav a.active {
+  background-color: #ccc;
+}
+.nav a.status {
+  background-color: #000;
+  color: #454545;
+}
+.nav a.status:hover {
+  color: #ccc;
+}
+.chat {
+  background-color: #fff;
+  border-right: 1px solid #000;
+  border-top: 1px solid #000;
+  height: 95vh;
+  padding: 4px;
+  overflow-y: scroll;
+}
+.chat div {
+  font-family: mono;
+}
+.nicks {
+  padding: 4px 10px;
+  margin: 0px;
+}
+.nicks a {
+  background-color: inherit;
+  display: block;
+  text-decoration: none;
+}

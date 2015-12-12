@@ -1,0 +1,13 @@
+{
+  "name": "buttirc-web",
+  "version": "0.0.0",
+  "description": "buttirc web client.",
+  "author": "Bheesham Persaud <bheesham.persaud@Live.ca>",
+  "license": "BSD",
+  "devDependencies": {
+    "gulp": "~3.9.0",
+    "gulp-jade": "~1.1.0",
+    "gulp-stylus": "~2.1.1",
+    "gulp-coffee": "~2.3.1"
+  }
+}

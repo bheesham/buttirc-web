@@ -1,0 +1,19 @@
+{
+  "name": "buttirc-web",
+  "description": "buttirc web client.",
+  "authors": [
+    "Bheesham Persaud <bheesham.persaud@Live.ca>"
+  ],
+  "license": "BSD",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "dist"
+  ],
+  "dependencies": {
+    "normalize-css": "normalize.css#~3.0.3",
+    "skeleton": "~2.0.4"
+  }
+}
