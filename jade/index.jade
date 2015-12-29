@@ -3,17 +3,29 @@ html
 	head
 		title buttirc
 		link(rel="stylesheet" href="vendors/normalize-css/normalize.css")
-		link(rel="stylesheet" href="vendors/skeleton/css/skeleton.css")
 		link(rel="stylesheet" href="style.css")
 	body
-		div.row
-			div.twelve.columns.nav
-				a.status(href="#") status
-		div.row
-			div.ten.columns.chat
-			div.two.columns.nicks
-		script(src="channel.js")
-		script(src="ui.js")
-		script(src="script.js")
+		.top
+			a.networks(href="#") add network
+			a.settings(href="#") account settings
+			a.logout(href="#") logout
+		.main
+			.chat
+				.history
+				.input
+					span.nick bheesham
+					input.message(type="text")
+			.side
+				.networks
+					h2 Networks
+					ul#networks
+				.nicks
+					h2 Nicks
+					ul#nicks
+
+		//script(src="networks.js")
+		//script(src="channel.js")
+		//script(src="ui.js")
+		//script(src="script.js")
 // comment.
 

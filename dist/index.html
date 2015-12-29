@@ -3,20 +3,32 @@
   <head>
     <title>buttirc</title>
     <link rel="stylesheet" href="vendors/normalize-css/normalize.css">
-    <link rel="stylesheet" href="vendors/skeleton/css/skeleton.css">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="row">
-      <div class="twelve columns nav"><a href="#" class="status">status</a></div>
+    <div class="top"><a href="#" class="networks">add network</a><a href="#" class="settings">account settings</a><a href="#" class="logout">logout</a></div>
+    <div class="main">
+      <div class="chat">
+        <div class="history"></div>
+        <div class="input"><span class="nick">bheesham</span>
+          <input type="text" class="message">
+        </div>
+      </div>
+      <div class="side">
+        <div class="networks">
+          <h2>Networks</h2>
+          <ul id="networks"></ul>
+        </div>
+        <div class="nicks">
+          <h2>Nicks</h2>
+          <ul id="nicks"></ul>
+        </div>
+      </div>
     </div>
-    <div class="row">
-      <div class="ten columns chat"></div>
-      <div class="two columns nicks"></div>
-    </div>
-    <script src="channel.js"></script>
-    <script src="ui.js"></script>
-    <script src="script.js"></script>
+    <!--script(src="networks.js")-->
+    <!--script(src="channel.js")-->
+    <!--script(src="ui.js")-->
+    <!--script(src="script.js")-->
   </body>
 </html>
 <!-- comment.-->

@@ -1,48 +1,86 @@
 body {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+}
+.top {
   background-color: #454545;
+  text-align: right;
+  border-bottom: 1px solid #000;
 }
-.nav {
-  height: 5vh;
-  overflow: hidden;
-}
-.nav a {
-  height: 100%;
-  color: #000;
-  display: inline-block;
-  min-width: 75px;
-  padding: 4px 6px;
-  text-decoration: none;
-}
-.nav a:hover {
+.top a {
   color: #fff;
+  display: inline-block;
+  min-width: 45px;
+  padding: 5px 10px;
+  text-decoration: none;
+  border-left: 1px solid #fff;
 }
-.nav a.active {
-  background-color: #ccc;
-}
-.nav a.status {
-  background-color: #000;
-  color: #454545;
-}
-.nav a.status:hover {
+.top a:hover {
   color: #ccc;
 }
-.chat {
-  background-color: #fff;
-  border-right: 1px solid #000;
-  border-top: 1px solid #000;
-  height: 95vh;
-  padding: 4px;
-  overflow-y: scroll;
+@media (max-width: 700px) {
+  .top a {
+    display: block;
+    border-left: none;
+  }
 }
-.chat div {
+.main {
+  flex: 1;
+  font-family: mono;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  flex-flow: row wrap;
+}
+.main .chat {
+  flex: 1;
+  min-width: 960px;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  top: 0px;
+  bottom: 0px;
+}
+.main .chat .history {
+  flex: 1;
+  order: 1;
+  overflow-y: scroll;
   font-family: mono;
 }
-.nicks {
-  padding: 4px 10px;
-  margin: 0px;
+.main .chat .input {
+  order: 2;
+  padding: 0px 0px 4px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  flex-flow: row wrap;
 }
-.nicks a {
-  background-color: inherit;
-  display: block;
-  text-decoration: none;
+.main .chat .input .nick {
+  font-weight: bold;
+  min-width: 150px;
+}
+.main .chat .input .message {
+  flex: 1;
+  display: inline-block;
+  width: 100%;
+}
+.main .side {
+  min-width: 450px;
+}
+.main .side div {
+  padding: 10px;
+  max-height: 200px;
+}
+.main .side div h2 {
+  margin: 0px;
 }
