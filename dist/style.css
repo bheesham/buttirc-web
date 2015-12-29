@@ -22,7 +22,7 @@ body {
 .top a:hover {
   color: #ccc;
 }
-@media (max-width: 700px) {
+@media (max-width: 399px) {
   .top a {
     display: block;
     border-left: none;
