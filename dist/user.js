@@ -34,7 +34,7 @@
     var param, xhr;
     xhr = new XMLHttpRequest();
     param = 'assertion=' + assertion;
-    xhr.open('POST', '/xhr/sign-in', true);
+    xhr.open('POST', '/user/signin', true);
     xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
     xhr.setRequestHeader('Content-length', param.length);
     xhr.setRequestHeader('Connection', 'close');
@@ -45,7 +45,7 @@
   on_signout = function() {
     var xhr;
     xhr = new XMLHttpRequest();
-    xhr.open('GET', '/xhr/sign-out', true);
+    xhr.open('GET', '/user/signout', true);
     xhr.send(null);
     return xhr.onreadystatechange = xhr_sentinel(xhr);
   };
