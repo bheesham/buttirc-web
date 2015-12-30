@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="utf-8">
     <title>buttirc</title>
     <link rel="stylesheet" href="vendors/normalize-css/normalize.css">
+    <link rel="stylesheet" href="vendors/css-social-buttons/css/zocial.css">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="top"><a href="#" class="networks">add network</a><a href="#" class="settings">account settings</a><a href="#" class="logout">logout</a></div>
+    <div class="top">
+      <div class="logged-out"><a href="#" class="zocial persona">sign in with persona</a></div>
+      <div class="logged-in"><a href="#" class="networks">add network</a><a href="#" class="settings">account settings</a><a href="#" class="logout">logout</a></div>
+    </div>
     <div class="main">
       <div class="chat">
         <div class="history"></div>
@@ -25,10 +31,7 @@
         </div>
       </div>
     </div>
-    <!--script(src="networks.js")-->
-    <!--script(src="channel.js")-->
-    <!--script(src="ui.js")-->
-    <!--script(src="script.js")-->
+    <script src="https://login.persona.org/include.js"></script>
   </body>
 </html>
 <!-- comment.-->

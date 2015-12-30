@@ -14,7 +14,6 @@
   ],
   "dependencies": {
     "normalize-css": "normalize.css#~3.0.3",
-    "skeleton": "~2.0.4",
-    "pure": "~0.6.0"
+    "css-social-buttons": "~1.1.1"
   }
 }

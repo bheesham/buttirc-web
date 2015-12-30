@@ -1,14 +1,22 @@
 doctype html
 html
 	head
+		meta(http-equiv="X-UA-Compatible" content="IE=Edge")
+		meta(charset="utf-8")
+
 		title buttirc
 		link(rel="stylesheet" href="vendors/normalize-css/normalize.css")
+		link(rel="stylesheet" href="vendors/css-social-buttons/css/zocial.css")
 		link(rel="stylesheet" href="style.css")
 	body
 		.top
-			a.networks(href="#") add network
-			a.settings(href="#") account settings
-			a.logout(href="#") logout
+			.logged-out
+				a.zocial.persona(href="#") sign in with persona
+
+			.logged-in
+				a.networks(href="#") add network
+				a.settings(href="#") account settings
+				a.logout(href="#") logout
 		.main
 			.chat
 				.history
@@ -23,9 +31,6 @@ html
 					h2 Nicks
 					ul#nicks
 
-		//script(src="networks.js")
-		//script(src="channel.js")
-		//script(src="ui.js")
-		//script(src="script.js")
+		script(src="https://login.persona.org/include.js")
 // comment.
 
