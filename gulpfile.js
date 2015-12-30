@@ -20,7 +20,7 @@ var html = function() {
 
 var js = function() {
   gulp.src('./coffee/*.coffee')
-  .pipe(coffee({bare: true}))
+  .pipe(coffee())
   .pipe(gulp.dest('./dist/'));
 };
 

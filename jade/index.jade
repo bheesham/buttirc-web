@@ -11,12 +11,12 @@ html
 	body
 		.top
 			.logged-out
-				a.zocial.persona(href="#") sign in with persona
+				a.zocial.persona#signin(href="#") sign in with persona
 
 			.logged-in
 				a.networks(href="#") add network
 				a.settings(href="#") account settings
-				a.logout(href="#") logout
+				a#signout(href="#") logout
 		.main
 			.chat
 				.history
@@ -32,5 +32,6 @@ html
 					ul#nicks
 
 		script(src="https://login.persona.org/include.js")
+		script(src="user.js")
 // comment.
 
