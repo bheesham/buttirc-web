@@ -15,11 +15,12 @@ if signout
 
 xhr_sentinel = (xhr) ->
     return () ->
-        if xhr.readyState = 4 and xhr.status == 200
-            window.location.reload()
-        else
-            navigator.id.logout()
-            alert('XMLHttpRequest error: ' + xhr.status)
+        if xhr.readyState = 4
+            if xhr.status == 200
+                window.location.reload()
+            else
+                navigator.id.logout()
+                alert('XMLHttpRequest error: ' + xhr.status)
 
 on_verify = (assertion) ->
     xhr = new XMLHttpRequest()

@@ -21,11 +21,13 @@
 
   xhr_sentinel = function(xhr) {
     return function() {
-      if (xhr.readyState = 4 && xhr.status === 200) {
-        return window.location.reload();
-      } else {
-        navigator.id.logout();
-        return alert('XMLHttpRequest error: ' + xhr.status);
+      if (xhr.readyState = 4) {
+        if (xhr.status === 200) {
+          return window.location.reload();
+        } else {
+          navigator.id.logout();
+          return alert('XMLHttpRequest error: ' + xhr.status);
+        }
       }
     };
   };
